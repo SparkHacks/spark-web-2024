@@ -175,7 +175,7 @@ export default function Team(){
         {teamMember.map((member) => 
           <div className="w-[250px] h-[250px] gap-2 flex flex-col justify-center items-center text-center">
             <div className="h-[150px] w-[150px] overflow-hidden rounded-3xl  border-4 border-[#FFDAB9] border-[4px_solid_#FFDAB9] shadow-[0px_0px_4px_0px_#FFDAB9] flex justify-center items-center">
-              <img src={member.image} className="h-[150px] w-[150px] object-cover " />
+              <img src={import.meta.env.BASE_URL + member.image} className="h-[150px] w-[150px] object-cover " />
               <div className="absolute h-[150px] w-[150px] rounded-3xl justify-center items-center flex transition duration-500 hover:opacity-100 opacity-0 bg-opacity-50 bg-[#FFDAB9] ">
                 <a href={member.linkedin} target="_blank" className="">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 19 20" fill="none">

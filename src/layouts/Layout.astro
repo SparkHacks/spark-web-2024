@@ -31,7 +31,7 @@ const { title } = Astro.props;
 		</div>
 		<div id="footer" class="bottom-0 left-0 h-full w-full bg-black text-white py-8 px-6 flex flex-col justify-between z-10">
 			<div class="flex md:flex-row flex-col md:gap-4 gap-16 justify-around place-items-center w-full px-16">
-				<img src="/logo-gray.png" class="w-24"/>
+				<img src={import.meta.env.BASE_URL + "/logo-gray.png"} class="w-24"/>
 				<div class="flex flex-col place-items-center">
 					<a class="font-semibold pb-1" href="/">SparkHacks 2024</a>
 					<a class="underline text-blue-300" href="mailto:sparkhacks@uic.edu">sparkhacks@uic.edu</a>
@@ -40,13 +40,13 @@ const { title } = Astro.props;
 					<p class="font-semibold pb-2">Follow Us</p>
 					<div class="flex flex-row gap-4">
 						<a class="cursor-pointer" target="_blank" href="https://www.instagram.com/sparkhacksuic/">
-							<img src="/instagram.png" class="w-6"/>
+							<img src={import.meta.env.BASE_URL + "/instagram.png"} class="w-6"/>
 						</a>
 						<a class="cursor-pointer" target="_blank" href="https://github.com/SparkHacks">
-							<img src="/github.png" class="w-6"/>
+							<img src={import.meta.env.BASE_URL + "/github.png"} class="w-6"/>
 						</a>
 						<a class="cursor-pointer" target="_blank" href="https://www.linkedin.com/company/sparkhacks/">
-							<img src="/linkedin.png" class="w-6"/>
+							<img src={import.meta.env.BASE_URL + "/linkedin.png"} class="w-6"/>
 						</a>
 					</div>
 				</div>

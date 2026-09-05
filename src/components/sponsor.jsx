@@ -4,39 +4,39 @@ import StarHeader from "./StarHeader.tsx";
 const sponsors = [
   {
     name: "Discover",
-    image: "sponsorLogo/discoverlogo.png",
+    image: "/sponsorLogo/discoverlogo.png",
   },
   {
     name: "UIC CS Department",
-    image: "sponsorLogo/uiccslogo.png",
+    image: "/sponsorLogo/uiccslogo.png",
   },
   {
     name: "John Deere",
-    image: "sponsorLogo/johndeerelogo.png",
+    image: "/sponsorLogo/johndeerelogo.png",
   },
   {
     name: "Caterpillar",
-    image: "sponsorLogo/caterpillarlogo.png",
+    image: "/sponsorLogo/caterpillarlogo.png",
   },
   {
     name: "Abbvie",
-    image: "sponsorLogo/abbvielogo.png",
+    image: "/sponsorLogo/abbvielogo.png",
   },
   {
     name: "Publicis Sapient",
-    image: "sponsorLogo/publicissapientlogo.png",
+    image: "/sponsorLogo/publicissapientlogo.png",
   },
   {
     name: "CME Group",
-    image: "sponsorLogo/cmegrouplogo.png",
+    image: "/sponsorLogo/cmegrouplogo.png",
   },
   {
     name: "Blue Cross Blue Shield Illinois",
-    image: "sponsorLogo/bcbs.png",
+    image: "/sponsorLogo/bcbs.png",
   },
   {
     name: "CodePath",
-    image: "sponsorLogo/codepath.png",
+    image: "/sponsorLogo/codepath.png",
   },
 ]
 
@@ -69,14 +69,14 @@ export default function Sponsor(){
           {sponsors.map((sponsor) => 
           <div key={sponsor.name}  className='group relative flex justify-center items-center min-h-[160px]'>
             <span className=' shadow-[0px_0px_4px_0px_#FFDAB9] rounded-[26.812px] border-4 border-solid border-[#FFDAB9] backdrop-blur-[19.5px]  absolute opacity-0 scale-0 transition-all group-hover:opacity-100 group-hover:scale-100  w-[70%] text-center text-[#FFDAB9] font-poppin '>{sponsor.name}</span>
-            <img src={sponsor.image} width="250" height="250" className="object-contain min-w-[250px]"></img>
+            <img src={import.meta.env.BASE_URL + sponsor.image} width="250" height="250" className="object-contain min-w-[250px]"></img>
             
             </div>
           )}
           {sponsors.map((sponsor) => 
           <div key={sponsor.name}  className='group relative flex justify-center items-center min-h-[160px]'>
             <span className=' shadow-[0px_0px_4px_0px_#FFDAB9] rounded-[26.812px] border-4 border-solid border-[#FFDAB9] backdrop-blur-[19.5px]  absolute opacity-0 scale-0 transition-all group-hover:opacity-100 group-hover:scale-100  w-[70%] text-center text-[#FFDAB9] font-poppin '>{sponsor.name}</span>
-            <img src={sponsor.image} width="250" height="250" className="object-contain min-w-[250px]"></img>
+            <img src={import.meta.env.BASE_URL + sponsor.image} width="250" height="250" className="object-contain min-w-[250px]"></img>
             
             </div>
           )}
@@ -89,14 +89,14 @@ export default function Sponsor(){
           whileInView={{  x: -4000 }}
           transition={{ duration: 20 }}
           viewport={{ once: true }}
-          src="/airplane.png" alt="" className="absolute w-[200px] opacity-60 -right-[190px]"/>
+          src={import.meta.env.BASE_URL + "/airplane.png"} alt="" className="absolute w-[200px] opacity-60 -right-[190px]"/>
 
           <motion.img 
           initial={{ x: 0 }}
           whileInView={{  x: 4000 }}
           transition={{ duration: 20, delay: 1 }}
           viewport={{ once: true }}
-          src="/helicopter.png" alt="" className="absolute w-[150px] -bottom-0 opacity-60 -left-[150px]"/>
+          src={import.meta.env.BASE_URL + "/helicopter.png"} alt="" className="absolute w-[150px] -bottom-0 opacity-60 -left-[150px]"/>
         </div>
       </div>
     </section>

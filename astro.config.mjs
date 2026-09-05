@@ -15,6 +15,8 @@ const adapter = {
 
 export default defineConfig({
   integrations: [react(), tailwind()],
-  output: "server",
-  adapter
+  // output: "server",
+  adapter,
+  site: 'https://sparkhacks.github.io',
+  base: '/spark-web-2024'
 });

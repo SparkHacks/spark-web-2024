@@ -23,8 +23,8 @@ export default function Headers() {
   return (
     <div className=" h-20 w-full fixed z-30  overflow-hidden bg-[rgba(0,_0,_0,_0.25)]">
       <div className="py-4 px-6 backdrop-blur-md flex flex-row justify-between items-center">
-        <a href='/' className="flex text-lg justify-center items-center cursor-pointer">
-          <img className="w-[70px]" src={"/logo.gif"}/>
+        <a href={import.meta.env.BASE_URL + '/'} className="flex text-lg justify-center items-center cursor-pointer">
+          <img className="w-[70px]" src={import.meta.env.BASE_URL + "/logo.gif"}/>
           <h1 className=" font-hyperhelix text-[#F9F5F6] text-2xl"> 2024</h1>
         </a>
         <div className="lg:hidden">
@@ -71,7 +71,7 @@ export default function Headers() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="md:text-[50px] text-[35px] font-hyperhelix mb-6 flex md:flex-row flex-col justify-center items-center gap-2">
-              <img className="w-[100px] h-auto brightness-0 invert" src={"/logo.png"}/>
+              <img className="w-[100px] h-auto brightness-0 invert" src={import.meta.env.BASE_URL + "/logo.png"}/>
               <h1>SparkHacks 2024</h1>
           </motion.span>
 
