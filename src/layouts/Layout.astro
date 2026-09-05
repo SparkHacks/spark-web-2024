@@ -18,7 +18,7 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="SparkHacks 2024 Official Website" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="/logo.png" />
+		<link rel="icon" type="image/png" href={import.meta.env.BASE_URL + "/logo.png"} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
