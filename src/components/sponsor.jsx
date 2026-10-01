@@ -69,14 +69,14 @@ export default function Sponsor(){
           {sponsors.map((sponsor) => 
           <div key={sponsor.name}  className='group relative flex justify-center items-center min-h-[160px]'>
             <span className=' shadow-[0px_0px_4px_0px_#FFDAB9] rounded-[26.812px] border-4 border-solid border-[#FFDAB9] backdrop-blur-[19.5px]  absolute opacity-0 scale-0 transition-all group-hover:opacity-100 group-hover:scale-100  w-[70%] text-center text-[#FFDAB9] font-poppin '>{sponsor.name}</span>
-            <img src={import.meta.env.BASE_URL + sponsor.image} width="250" height="250" className="object-contain min-w-[250px]"></img>
+            <img src={sponsor.image} width="250" height="250" className="object-contain min-w-[250px]"></img>
             
             </div>
           )}
           {sponsors.map((sponsor) => 
           <div key={sponsor.name}  className='group relative flex justify-center items-center min-h-[160px]'>
             <span className=' shadow-[0px_0px_4px_0px_#FFDAB9] rounded-[26.812px] border-4 border-solid border-[#FFDAB9] backdrop-blur-[19.5px]  absolute opacity-0 scale-0 transition-all group-hover:opacity-100 group-hover:scale-100  w-[70%] text-center text-[#FFDAB9] font-poppin '>{sponsor.name}</span>
-            <img src={import.meta.env.BASE_URL + sponsor.image} width="250" height="250" className="object-contain min-w-[250px]"></img>
+            <img src={sponsor.image} width="250" height="250" className="object-contain min-w-[250px]"></img>
             
             </div>
           )}
@@ -89,14 +89,14 @@ export default function Sponsor(){
           whileInView={{  x: -4000 }}
           transition={{ duration: 20 }}
           viewport={{ once: true }}
-          src={import.meta.env.BASE_URL + "/airplane.png"} alt="" className="absolute w-[200px] opacity-60 -right-[190px]"/>
+          src={"/airplane.png"} alt="" className="absolute w-[200px] opacity-60 -right-[190px]"/>
 
           <motion.img 
           initial={{ x: 0 }}
           whileInView={{  x: 4000 }}
           transition={{ duration: 20, delay: 1 }}
           viewport={{ once: true }}
-          src={import.meta.env.BASE_URL + "/helicopter.png"} alt="" className="absolute w-[150px] -bottom-0 opacity-60 -left-[150px]"/>
+          src={"/helicopter.png"} alt="" className="absolute w-[150px] -bottom-0 opacity-60 -left-[150px]"/>
         </div>
       </div>
     </section>
